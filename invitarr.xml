@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Invitarr</Name>
+  <Repository>piratify/invitarr:latest</Repository>
+  <Registry>https://hub.docker.com/r/piratify/invitarr</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/Sleepingpirates/Invitarr</Project>
+  <Overview/>
+  <Category>HomeAutomation: Tools: Other: MediaApp:Other MediaServer:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Sleepingpirates/Invitarr/backupmaster/Screenshots/invitarr.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1628449191</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/Invitarr/</HostDir>
+      <ContainerDir>/app/config/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>token</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Discord Bot Token" Target="token" Default="" Mode="" Description="Discord Bot Token" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Config" Target="/app/config/" Default="/mnt/user/appdata/Invitarr/" Mode="rw" Description="Config path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Invitarr/</Config>
+</Container>
